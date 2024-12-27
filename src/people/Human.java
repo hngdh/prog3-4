@@ -2,7 +2,7 @@ package people;
 import exceptions.WrongFloor;
 import objects.Lift;
 import utilities.*;
-public abstract class Human {
+public abstract class Human implements HumanLocation{
     String name;
     HumanActs act;
     Location location;
@@ -41,11 +41,11 @@ public abstract class Human {
         System.out.println(this.getClass().getSimpleName() + " says: " + string);
     }
 
-    private void changeLocation(int CorX, int CorY) {
+    public void changeLocation(int CorX, int CorY) {
         location.modify(CorX, CorY);
     }
 
-    private void setLocation(int CorX, int CorY) {
+    public void setLocation(int CorX, int CorY) {
         location.set(CorX, CorY);
         System.out.println(this.getClass().getSimpleName() + " is going to " + location);
     }

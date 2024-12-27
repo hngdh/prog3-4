@@ -37,7 +37,7 @@ public class Door implements Obj{
         System.out.println("Opening " + this.key + "'s door");
         if (state == DoorStates.LOCKED && this.key.equals(key.getKey()) && this.location.get().equals(human.getLocation().get())) {
             setDoorState(DoorStates.OPEN);
-            System.out.println("The door is " + state.toString().toLowerCase() + "ed");
+            System.out.println("The door is " + state.toString().toLowerCase());
             System.out.println();
         } else {
             throw new WrongKey();
@@ -48,7 +48,7 @@ public class Door implements Obj{
         System.out.println("Locking " + this.key + "'s door");
         if ( state == DoorStates.CLOSE && this.key.equals(key.getKey()) && this.location.get().equals(human.getLocation().get())) {
                 setDoorState(DoorStates.LOCKED);
-                System.out.println("The door is " + state.toString().toLowerCase() + "ed");
+                System.out.println("The door is " + state.toString().toLowerCase());
         }
     }
 
