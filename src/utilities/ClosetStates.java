@@ -1,5 +1,6 @@
 package utilities;
 
 public enum ClosetStates {
-    EMPTY, FULL
+    EMPTY,
+    FULL
 }

@@ -1,4 +1,6 @@
 package utilities;
 public enum KeyOwners {
-    Kozlik, Doorman, Nheznaika
+    Kozlik,
+    Doorman,
+    Nheznaika
 }
