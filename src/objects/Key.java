@@ -5,15 +5,13 @@ import utilities.KeyOwners;
 import java.lang.Object;
 import java.util.Objects;
 
-public class Key {
+public class Key{
     private KeyOwners owner;
     private Keys key;
-
     public Key(Keys key, KeyOwners owner) {
         this.key = key;
         this.owner = owner;
     }
-
     public void setKey(Keys key) {
         if (this.owner == KeyOwners.Doorman) {
             this.key = key;

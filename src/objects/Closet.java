@@ -6,8 +6,8 @@ import utilities.ClosetStates;
 import java.util.Objects;
 
 public class Closet implements Obj {
-    Location location;
-    ClosetStates state;
+    private Location location;
+    private ClosetStates state;
     public Closet(ClosetStates state, Location location) {
         this.state = state;
         this.location = location;

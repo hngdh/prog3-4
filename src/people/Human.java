@@ -41,11 +41,10 @@ public abstract class Human implements HumanLocation{
         System.out.println(this.getClass().getSimpleName() + " says: " + string);
     }
 
-    public void changeLocation(int CorX, int CorY) {
+    private void changeLocation(int CorX, int CorY) {
         location.modify(CorX, CorY);
     }
-
-    public void setLocation(int CorX, int CorY) {
+    private void setLocation(int CorX, int CorY) {
         location.set(CorX, CorY);
         System.out.println(this.getClass().getSimpleName() + " is going to " + location);
     }
